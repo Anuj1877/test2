@@ -19,6 +19,12 @@ body {
     margin-bottom: 0px;
 }
 
+.sub_text {
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: normal; /* Remove bold effect */
+    color: white;
+}
+
 .gif_container {
     display: flex;
     justify-content: center;
@@ -31,16 +37,16 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Confetti effect */
+/* Confetti pop effect */
 .confetti-piece {
     position: absolute;
     width: 10px;
     height: 10px;
     background-color: #ffffff;
-    animation: Confetti 5s infinite;
+    animation: ConfettiPop 2s ease-out forwards;
 }
 
-@keyframes Confetti {
+@keyframes ConfettiPop {
     0% { transform: translateY(0) rotate(0); opacity: 1; }
-    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
 }
