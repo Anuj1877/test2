@@ -1,4 +1,4 @@
-// JavaScript to generate confetti
+// JavaScript to generate confetti pop effect
 document.addEventListener("DOMContentLoaded", () => {
     const confettiContainer = document.createElement("div");
     confettiContainer.className = "confetti-container";
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const confetti = document.createElement("div");
         confetti.className = "confetti-piece";
         confetti.style.left = `${Math.random() * 100}%`;
-        confetti.style.animationDelay = `${Math.random() * 5}s`;
+        confetti.style.animationDelay = `${Math.random() * 2}s`;
         confettiContainer.appendChild(confetti);
     }
 });
